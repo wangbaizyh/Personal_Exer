@@ -10,7 +10,6 @@ package com.geek.leetcode.list;
  *
  * 思路：
  *      1、双指针：前节点（更新）、当前节点（更新）、下一个节点（临时）
- *      2、
  */
 
 public class Code206 {
