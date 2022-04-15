@@ -18,7 +18,7 @@ public class Code02_07 {
 
 }
 
-public class Solution02_07 {
+class Solution02_07 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode curA = headA;
         ListNode curB = headB;
