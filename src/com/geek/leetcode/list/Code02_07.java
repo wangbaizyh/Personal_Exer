@@ -6,6 +6,8 @@ package com.geek.leetcode.list;
  * 面试题 02.07. 链表相交
  * https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/
  *
+ * 链表题
+ *
  * 思路：求两个链表交点节点的指针。
  *      - 先求两个链表的长度
  *      - 让curA为最长链表的头，lenA为其长度
