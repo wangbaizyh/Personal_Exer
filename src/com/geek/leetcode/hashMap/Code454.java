@@ -8,7 +8,7 @@ import java.util.HashMap;
  * 454. 四数相加 II
  * https://leetcode-cn.com/problems/4sum-ii/
  *
- *
+ * hashMap
  *
  */
 public class Code454 {
@@ -20,6 +20,7 @@ class Solution454 {
         HashMap<Integer, Integer> map = new HashMap<>();
         int temp;
         int result = 0;
+
         for (int i : nums1) {
             for (int j : nums2) {
                 temp = i + j;
