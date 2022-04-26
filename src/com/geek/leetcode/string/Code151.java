@@ -6,7 +6,7 @@ package com.geek.leetcode.string;
  * 151. 颠倒字符串中的单词
  * https://leetcode-cn.com/problems/reverse-words-in-a-string/
  *
- * 双指针
+ * 双指针法：快慢指针法
  *
  */
 public class Code151 {
@@ -44,9 +44,9 @@ class Solution151_01 {
         int slow = 0;
         char[] chars = s.toCharArray();
 
-        for (int i = 0; i < chars.length; i++) {
+        for (int fast = 0; fast < chars.length; fast++) {
             //遇到非空格就处理，即删除所有空格。
-            if (s.charAt(i) != ' '){
+            if (s.charAt(fast) != ' '){
                 // 手动控制空格，给单词之间添加空格。
                 // slow != 0 说明不是第一个单词，需要在单词前添加空格。
                 if (slow != 0) {
@@ -54,8 +54,8 @@ class Solution151_01 {
                 }
 
                 // 补上该单词，遇到空格说明单词结束。
-                while (i < chars.length && chars[i] != ' ') {
-                    chars[slow++] = chars[i++];
+                while (fast < chars.length && chars[fast] != ' ') {
+                    chars[slow++] = chars[fast++];
                 }
             }
         }

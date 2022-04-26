@@ -19,7 +19,7 @@ public class Code19 {
 }
 
 // 双指针：快慢指针
-class Solution {
+class Solution19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         // 虚拟头节点
         ListNode dummyHead = new ListNode(0);

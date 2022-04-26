@@ -6,7 +6,7 @@ package com.geek.leetcode.list;
  * 142. 环形链表 II
  * https://leetcode-cn.com/problems/linked-list-cycle-ii/
  *
- * 快慢指针法
+ * 快慢指针法、数学题（规律）
  *
  */
 
