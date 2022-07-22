@@ -1,7 +1,5 @@
 package com.geek.leetcode.string;
 
-import org.junit.Test;
-
 /**
  * @author G.E.E.K.
  * @create 2022-04-26 16:05
@@ -15,11 +13,6 @@ import org.junit.Test;
  *
  */
 public class Code459 {
-
-    @Test
-    public void test() {
-
-    }
 
 }
 

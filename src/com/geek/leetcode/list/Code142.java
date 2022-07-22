@@ -1,5 +1,7 @@
 package com.geek.leetcode.list;
 
+import java.util.HashSet;
+
 /**
  * @author G.E.E.K.
  * @create 2022-04-15 11:30 AM
@@ -14,6 +16,7 @@ public class Code142 {
 
 }
 
+// 双指针
 class Solution142 {
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
@@ -38,8 +41,24 @@ class Solution142 {
                     index1 = index1.next;
                     index2 = index2.next;
                 }
+
                 return index1;
             }
+        }
+
+        return null;
+    }
+}
+
+// 哈希表去重
+class Solution142_1 {
+    public ListNode detectCycle(ListNode head) {
+        HashSet<ListNode> set = new HashSet<>();
+
+        while (head != null) {
+            if (set.contains(head)) return head;
+            set.add(head);
+            head = head.next;
         }
 
         return null;

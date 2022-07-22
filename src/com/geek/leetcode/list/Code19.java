@@ -18,6 +18,7 @@ public class Code19 {
 
 }
 
+// 删除的情况，必须使用虚拟头节点，例如只有一个节点的情况
 // 双指针：快慢指针
 class Solution19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -30,12 +31,16 @@ class Solution19 {
         ListNode slow = dummyHead;
 
         // 快指针移动
-        while (n-- > 0 && fast.next != null) {
+        while (n > 0 && fast != null) {
             fast = fast.next;
+            n--;
         }
 
+        // 因为要删除倒数第n个节点，需要再进一步，慢指针指向删除的前一个节点
+        fast = fast.next;
+
         // 一起移动（忽略异常的空指针情况）
-        while (fast.next != null) {
+        while (fast != null) {
             fast = fast.next;
             slow = slow.next;
         }
@@ -45,3 +50,4 @@ class Solution19 {
         return dummyHead.next;
     }
 }
+

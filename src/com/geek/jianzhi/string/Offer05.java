@@ -6,7 +6,7 @@ package com.geek.jianzhi.string;
  * 剑指 Offer 05. 替换空格
  * https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
  *
- * 字符串、暴力模拟、双指针、扩展数组空间
+ * 思路：字符串、暴力模拟、双指针、扩展数组空间
  *
  */
 public class Offer05 {
